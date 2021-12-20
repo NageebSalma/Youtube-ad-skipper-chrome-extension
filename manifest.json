@@ -2,5 +2,12 @@
   "manifest_version": 2,
   "name": "Youtube Ad Skipper",
   "description": "Skips YouTube Ads Automatically!",
-  "version": "1.0"
+  "version": "1.0",
+  "icons": {"128": "fast-forward.png"},
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["skipper.js"]
+    }
+  ]
 }
